@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "ox-mediawiki" "20180105.2154" "Mediawiki Back-End for Org Export Engine" '((cl-lib "0.5") (s "1.9.0")) :commit "a9327150293e370e500ba55bddfe5fc435c6bf9b" :keywords '("org" "wp" "mediawiki") :authors '(("Tom Alexander" . "tomalexander@paphus.com")) :maintainer '("Tom Alexander" . "tomalexander@paphus.com") :url "https://github.com/tomalexander/orgmode-mediawiki")
