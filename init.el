@@ -38,13 +38,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "cab317d0125d7aab145bc7ee03a1e16804d5abdfa2aa8738198ac30dc5f7b569" "39dd7106e6387e0c45dfce8ed44351078f6acd29a345d8b22e7b8e54ac25bac4" "f3ab34b145c3b2a0f3a570ddff8fabb92dafc7679ac19444c31058ac305275e1" default)))
+   '("1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "cab317d0125d7aab145bc7ee03a1e16804d5abdfa2aa8738198ac30dc5f7b569" "39dd7106e6387e0c45dfce8ed44351078f6acd29a345d8b22e7b8e54ac25bac4" "f3ab34b145c3b2a0f3a570ddff8fabb92dafc7679ac19444c31058ac305275e1" default))
  '(global-color-identifiers-mode t)
- '(helm-completion-style (quote emacs))
+ '(helm-completion-style 'emacs)
  '(package-selected-packages
-   (quote
-    (go-autocomplete ox-pukiwiki ox-mediawiki ox-twiki ox-gfm htmlize go-mode spotify default-text-scale color-identifiers-mode monochrome-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+   '(clipetty go-autocomplete ox-pukiwiki ox-mediawiki ox-twiki ox-gfm htmlize go-mode spotify default-text-scale color-identifiers-mode monochrome-theme zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))
  '(show-paren-mode t)
  '(speedbar-show-unknown-files t))
 (custom-set-faces
@@ -69,7 +67,9 @@ This is particularly useful under Mac OSX, where GUI apps are not started from a
 (set-exec-path-from-shell-PATH)
 (global-set-key (kbd "C-<tab>") 'helm-projectile-find-other-file)
 ;(global-set-key (kbd "
-(global-set-key (kbd "s-f") 'helm-projectile-find-file-dwim)
+(global-set-key (kbd "C-x o") 'helm-projectile-find-file-dwim)
+(global-set-key (kbd "C-x f") 'helm-projectile-grep)
+(xterm-mouse-mode +1)
 
 (global-set-key (kbd "s-+") 'default-text-scale-increase)
 (global-set-key (kbd "s--") 'default-text-scale-decrease)
