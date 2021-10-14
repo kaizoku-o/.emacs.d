@@ -18,6 +18,9 @@
 (setq column-number-mode t)
 (setq show-paren-mode t)
 
+;; copy
+(setq x-select-enable-clipboard t)
+
 (require 'setup-general)
 (if (version< emacs-version "24.4")
     (require 'setup-ivy-counsel)
